@@ -7,7 +7,7 @@
 ==========================================================================================================
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=freestyletear" alt="freestyletear github profile trophy's" /></a> </p>
 
-[![GitHub Issues](https://img.shields.io/github/issues/freestyletear/top-pic)](https://freestyletear.github.io/top-pic/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/freestyletear/top-pic)](https://freestyletear.github.io/on-the-spot/issues)
 
 ## Languages and Tools
 
@@ -26,11 +26,11 @@
 
 ## SetUp / Installation Requirements
 
-- Clone this repository to a location in your file system. `git clone https://github.com/freestyletear/top-pic.git`
-- Open terminal command line then navigate to the root folder of the application. `cd watchlist`
+- Clone this repository to a location in your file system. `git clone https://github.com/freestyletear/on-the-spot.git`
+- Open terminal command line then navigate to the root folder of the application. `cd on-the-spot`
 - Activate Virtual `source virtual/bin/activate`
 - Ensure Flask-Script, Flask-Bootstrap, Postgres, Flask-SQLAlchemy & Flask-Forms are installed by typing `pip freeze` on the terminal. If not run the necessary commands to install them.
-- After installing the dependencies, setup your environment variables. Run the following commands on the terminal: `export MOVIE_API_KEY=<Your api key>` then `export SECRET_KEY=<kj16>`
+- After installing the dependencies, setup your environment variables. Run the following commands on the terminal: `export MOVIE_API_KEY=<Your api key>` then `export SECRET_KEY=<kj29>`
 - Run `./start.sh` command. Note this will work if you've properly configured your app with the required dependencies 
 - Navigate to `http://localhost:5000/` in your browser.
 
@@ -38,7 +38,7 @@
 
 To fix a bug or enhance an existing module, follow these steps:
 
-- Fork the repo reach out to (https://github.com/freestyletear/top-pic/fork)
+- Fork the repo reach out to (https://github.com/freestyletear/on-the-spot/fork)
 - Create a new branch (`git checkout -b improve-feature`)
 - Make the appropriate changes in the files
 - Add changes to reflect the changes made
@@ -49,10 +49,10 @@ To fix a bug or enhance an existing module, follow these steps:
 ## Known Bugs / Feature Request
 
 * Copy function not fully functional
-* If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/top-pic/issues/new) by including your search query and the expected result.
-* If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/freestyletear/top-pic/issues/new) Please include sample queries and their corresponding result.
+* If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/on-the-spot/issues/new) by including your search query and the expected result.
+* If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/freestyletear/on-the-spot/issues/new) Please include sample queries and their corresponding result.
 
-##### Link to Live Site : [https://top-pic.herokuapp.com/](https://top-pic.herokuapp.com/)
+##### Link to Live Site : [https://on-the-spot.herokuapp.com/](https://on-the-spot.herokuapp.com/)
 
 ## Sources
 
@@ -87,8 +87,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-[link-1]: https://raw.githubusercontent.com/freestyletear/password_locker/master/LICENSE
 
 ---
