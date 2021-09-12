@@ -1,6 +1,6 @@
 <h1 align=center >ON THE SPOT</h1>
 
-<p align=center >. 9th September 2021</p>
+<p align=center >Created by Keith James on the 9th September 2021</p>
 
 <p align="center"> This project was created with Python version 3 </p>
 
@@ -9,8 +9,11 @@
 
 [![GitHub Issues](https://img.shields.io/github/issues/freestyletear/top-pic)](https://freestyletear.github.io/on-the-spot/issues)
 
-## Languages and Tools
+## Description
 
+A web application where users can view the latest news from different sources. It uses the News API to fetch the news and display it on the web page.
+
+## Languages and Tools
 
 [<img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="python" width="100" height="70"/>](https://www.w3schools.com/python/default.asp "python 3")
 [<img src="https://e7.pngegg.com/pngimages/654/56/png-clipart-flask-web-framework-python-software-framework-jinja-flask-miscellaneous-monochrome-thumbnail.png" alt="flask" width="100" height="70"/>](https://flask.palletsprojects.com/en/2.0.x/ "flask")
@@ -18,6 +21,9 @@
 [<img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="github" width="100" height="70"/>](https://docs.github.com/en "github")
 [<img src="https://uploads.sitepoint.com/wp-content/uploads/2016/04/1461122387heroku-logo.jpg" alt="flask" width="100" height="70"/>](https://www.heroku.com/about "heroku")
 [<img src="https://www.opensourceagenda.com/projects/flask-bootstrap/image.png" alt="flask" width="100" height="70"/>](https://pythonhosted.org/Flask-Bootstrap/ "flask_bootstrap")
+[<img src="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/html_tag.png" alt="github" width="100" height="70"/>](https://www.w3schools.com/html/html_intro.asp "html")
+[<p>News api</p>](https://newsapi.org/)
+[<p>CSS</p>](https://www.w3schools.com/css/)
 
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=freestyletear&show_icons=true&locale=en&layout=compact&theme=cobalt" alt="freestyletear github status on top languages used" /></p>
@@ -28,13 +34,72 @@
 
 ## SetUp / Installation Requirements
 
+- Open terminal and navigate to the directory of the project you just cloned to your computer
+- Run the following command to start the server using virtual environment
+
+
 - Clone this repository to a location in your file system. `git clone https://github.com/freestyletear/on-the-spot.git`
 - Open terminal command line then navigate to the root folder of the application. `cd on-the-spot`
-- Activate Virtual `source virtual/bin/activate`
-- Ensure Flask-Script, Flask-Bootstrap, Postgres, Flask-SQLAlchemy & Flask-Forms are installed by typing `pip freeze` on the terminal. If not run the necessary commands to install them.
-- After installing the dependencies, setup your environment variables. Run the following commands on the terminal: `export MOVIE_API_KEY=<Your api key>` then `export SECRET_KEY=<kj29>`
-- Run `./start.sh` command. Note this will work if you've properly configured your app with the required dependencies 
+
+  - On the terminal enter
+      ```
+      $ git init
+      ```
+  - Then create a virtual enviroment depending with the python version you have it has to be above 3.0.0
+      ```
+      $ python3 -m venv --without-pip virtual
+      ```
+      - Or
+        ```
+        $ python3 -m venv virtual
+        ```
+  - Lets activate the enviroment (_virtual_ is just a word you can use any as long as you remember)
+      ```
+      $ source virtual/bin/ativate
+      ```
+  - Now we can proceed to installing file: **IMPORTANT** that are going to aid in styling, running e,t.c
+      ```
+      $ curl https://bootstrap.pypa.io/get-pip.py | python
+      ```
+      - Or
+      ```
+      $ pip install flask-bootstrap
+      ```
+      - Then
+      ```
+      $ pip install flask
+      ```
+      - If maybe just maybe you run into an error like no module flask_bootstrap or no module flask_.combat enter
+      ```
+      pip install --force-reinstall flask==1.1.2
+      ```
+        - Or
+        ```
+        $ pip install flask==1.1.4 
+        ```
+  - To easen on the running process and after building your manage and start files enter 
+      ```
+      $ chmod a+x start.sh
+      ```
+  - Now to run the application enter 
+      ```
+      $ ./start.sh
+      ```
+      Note this will work if you've properly configured your app with the required dependencies 
+
+## Additional Requirements
+
+- Git
+- Web-browser or your choice
+- Github
+- Pip
+- Python 3+
+- News ApiKey (https://newsapi.org/)
+
+
 - Navigate to `http://localhost:5000/` in your browser.
+
+- Live link to view the project <a target="_blank" href="https://on-the-spot.herokuapp.com/">On the spot</a>
 
 >Want to contribute? Great!
 
@@ -50,11 +115,10 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Known Bugs / Feature Request
 
-* Copy function not fully functional
-* If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/on-the-spot/issues/new) by including your search query and the expected result.
+* Entertainment tab is not opperational could be a server error
+* If you find a more bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/on-the-spot/issues/new) by including your search query and the expected result.
 * If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/freestyletear/on-the-spot/issues/new) Please include sample queries and their corresponding result.
 
-##### Link to Live Site : [https://on-the-spot.herokuapp.com/](https://on-the-spot.herokuapp.com/)
 
 ## Sources
 
@@ -91,3 +155,15 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+    
