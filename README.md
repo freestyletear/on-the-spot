@@ -4,7 +4,7 @@
 
 <p align="center"> This project was created with Python version 3 </p>
 
-==========================================================================================================
+===============================================================================================================
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=freestyletear" alt="freestyletear github profile trophy's" /></a> </p>
 
 [![GitHub Issues](https://img.shields.io/github/issues/freestyletear/top-pic)](https://freestyletear.github.io/on-the-spot/issues)
@@ -95,7 +95,7 @@ A web application where users can view the latest news from different sources. I
 - Github
 - Pip
 - Python 3+
-- News ApiKey (https://newsapi.org/)
+- News ApiKey [here](https://newsapi.org/)
 
 
 - Navigate to `http://localhost:5000/` in your browser.
