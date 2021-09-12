@@ -57,7 +57,7 @@ A web application where users can view the latest news from different sources. I
       ```
       $ source virtual/bin/ativate
       ```
-  - Now we can proceed to installing file: **IMPORTANT** that are going to aid in styling, running e,t.c
+  - Now we can proceed to installing files: **IMPORTANT** that are going to aid in styling, running e,t.c
       ```
       $ curl https://bootstrap.pypa.io/get-pip.py | python
       ```
@@ -73,10 +73,11 @@ A web application where users can view the latest news from different sources. I
       ```
       pip install --force-reinstall flask==1.1.2
       ```
-        - Or
-        ```
-        $ pip install flask==1.1.4 
-        ```
+
+      - Or
+      ```
+      $ pip install flask==1.1.4 
+      ```
   - To easen on the running process and after building your manage and start files enter 
       ```
       $ chmod a+x start.sh

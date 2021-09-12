@@ -17,7 +17,7 @@ def index():
     bbc_home_picture = get_articles_from_source('bbc-news', '1')
     cnn = get_articles_from_source('cnn', '2')
     google = get_articles_from_source('google-news', '2')
-    title = 'Home - Welcome to The best Hot News in the world'
+    title = 'On The Spot | Home'
     return render_template('index.html',
                            title=title,
                            sources=sources,
