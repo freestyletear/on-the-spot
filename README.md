@@ -17,6 +17,8 @@
 [<img src="https://cdn-images-1.medium.com/max/1200/1*Zkhl4Zz43z2_iR_ADlP-rg.png" alt="google" width="70" height="70"/>](https://www.google.com/ "google")
 [<img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="github" width="100" height="70"/>](https://docs.github.com/en "github")
 [<img src="https://uploads.sitepoint.com/wp-content/uploads/2016/04/1461122387heroku-logo.jpg" alt="flask" width="100" height="70"/>](https://www.heroku.com/about "heroku")
+[<img src="https://www.opensourceagenda.com/projects/flask-bootstrap/image.png" alt="flask" width="100" height="70"/>](https://pythonhosted.org/Flask-Bootstrap/ "flask_bootstrap")
+
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=freestyletear&show_icons=true&locale=en&layout=compact&theme=cobalt" alt="freestyletear github status on top languages used" /></p>
 
