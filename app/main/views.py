@@ -18,16 +18,7 @@ def index():
     cnn = get_articles_from_source('cnn', '2')
     google = get_articles_from_source('google-news', '2')
     title = 'On The Spot | Home'
-    return render_template('index.html',
-                           title=title,
-                           sources=sources,
-                           bbc_news=bbc_news,
-                           aljazeera_english=aljazeera_english,
-                           bbc_home_picture=bbc_home_picture,
-                           cnn=cnn,
-                           google=google
-                           )
-
+    return render_template('index.html', title=title, sources=sources, bbc_news=bbc_news, aljazeera_english=aljazeera_english, bbc_home_picture=bbc_home_picture, cnn=cnn, google=google)
 
 @main.route('/source/articles/<source_id>')
 def articles(source_id):
@@ -41,58 +32,14 @@ def articles(source_id):
 
     return render_template('articles.html', title=title, articles=articles)
 
-
-@main.route('/business')
-def business():
-    '''
-    View business page function that returns the business page and its data
-    '''
-    business = get_articles_depending_on_category('business')
-    title = 'Business - Welcome to The best Hot News in the world'
-    return render_template('business.html',
-                           title=title,
-                           business=business
-                           )
-
-
-@main.route('/sports')
-def sports():
-    '''
-    View sports page function that returns the sports page and its data
-    '''
-    sports = get_articles_depending_on_category('sports')
-    title = 'Sports - Welcome to The best Hot News in the world'
-    return render_template('sports.html',
-                           title=title,
-                           sports=sports
-                           )
-
-
 @main.route('/entertainment')
 def entertainment():
     '''
     View entertainment page function that returns the entertainment page and its data
     '''
     entertainment = get_articles_depending_on_category('entertainment')
-    title = 'Entertainment - Welcome to The best Hot News in the world'
-    return render_template('entertainment.html',
-                           title=title,
-                           entertainment=entertainment
-                           )
-
-
-@main.route('/technology')
-def technology():
-    '''
-    View technology page function that returns the technology page and its data
-    '''
-    technology = get_articles_depending_on_category('technology')
-    title = 'Technology - Welcome to The best Hot News in the world'
-    return render_template('technology.html',
-                           title=title,
-                           technology=technology
-                           )
-
+    title = 'Entertainment'
+    return render_template('entertainment.html', title=title, entertainment=entertainment)
 
 @main.route('/health')
 def health():
@@ -100,12 +47,17 @@ def health():
     View health page function that returns the health page and its data
     '''
     health = get_articles_depending_on_category('health')
-    title = 'Health - Welcome to The best Hot News in the world'
-    return render_template('health.html',
-                           title=title,
-                           health=health
-                           )
+    title = 'Health Related News'
+    return render_template('health.html', title=title, health=health)
 
+@main.route('/technology')
+def technology():
+    '''
+    View technology page function that returns the technology page and its data
+    '''
+    technology = get_articles_depending_on_category('technology')
+    title = 'Tech'
+    return render_template('technology.html', title=title, technology=technology)
 
 @main.route('/science')
 def science():
@@ -113,8 +65,23 @@ def science():
     View science page function that returns the science page and its data
     '''
     science = get_articles_depending_on_category('science')
-    title = 'Science - Welcome to The best Hot News in the world'
-    return render_template('science.html',
-                           title=title,
-                           science=science
-                           )
+    title = 'Science Related News'
+    return render_template('science.html', title=title, science=science)
+
+@main.route('/business')
+def business():
+    '''
+    View business page function that returns the business page and its data
+    '''
+    business = get_articles_depending_on_category('business')
+    title = 'Business'
+    return render_template('business.html', title=title, business=business)
+
+@main.route('/sports')
+def sports():
+    '''
+    View sports page function that returns the sports page and its data
+    '''
+    sports = get_articles_depending_on_category('sports')
+    title = 'Sports New'
+    return render_template('sports.html',title=title, sports=sports)

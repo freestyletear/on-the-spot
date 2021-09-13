@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
-
 body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -26,76 +23,81 @@ body {
 
 @keyframes color-change-5x {
   0% {
-    background: #19dcea;
+    background: #0d6efd;
+  }
+  5% {
+    background: #6610f2;
   }
   10% {
-    background: #b22cff;
+    background: #6f42c1;
+  }
+  15% {
+    background: #d63384;
   }
   20% {
-    background: #ea2222;
+    background: #dc3545;
+  }
+  25% {
+    background: #fd7e14;
   }
   30% {
-    background: #f5be10;
+    background: #ffc107;
+  }
+  35% {
+    background: #198754;
   }
   40% {
-    background: #fff;
+    background: #f8f9fa;
+  }
+  45% {
+    background: #20c997;
   }
   50% {
-    background: #aaa;
+    background: #0dcaf0;
   }
-  80% {
-    background: #000;
-  }
-  70% {
-    background: #050505;
-  }
-  80% {
-    background: yellowgreen;
-  }
-  90% {
-    background: brown;
-  }
-  100% {
+  55% {
     background: blue;
   }
-}
-/* body {
-  max-width: 100%;
-  overflow-x: hidden;
-} */
-/* :root {
-  --main-color: #bb1919;
-  --btn: #aa35d6;
-} */
-
-/* .color-main {
-  color: var(--btn);
-} */
-
-.headings {
-  font-family: "Merienda One", cursive;
-  /* text-decoration: underline; */
-}
-
-a {
-  text-decoration: none;
-}
-
-/* .btn-primary {
-  background-color: #aa35d6;
-  border-color: #aa35d6;
-}
-
-.btn-primary:hover {
-  background-color: #60167a;
-  border-color: #60167a;
-} */
-
-.btn-info {
-  background-color: #e12235;
+  60% {
+    background: #fff;
+  }
+  65% {
+    background: #6c757d;
+  }
+  70% {
+    background: #343a40;
+  }
+  75% {
+    background: #0d6efd;
+  }
+  80% {
+    background: #6c757d;
+  }
+  85% {
+    background: #198754;
+  }
+  90% {
+    background: #0dcaf0;
+  }
+  95% {
+    background: #ffc107;
+  }
+  100% {
+    background: #dc3545;
+  }
 }
 
-
+/* ===================================================
+            404 CAROUSEL
+   =================================================== */
+#carouselExampleSlidesOnly {
+  width: 300px;
+  height: 200px;
+  left: 38%;
+}
+#carousel.card {
+  height: 230px;
+}
 /* ==============================================
                   NAVBAR
    =========================================== */
@@ -106,7 +108,7 @@ a {
   font-weight: bolder;
 }
 .navbar-brand:hover {
-  color: #fd1d1d;
+  color: yellowgreen;
 }
 .navbar-expand-lg {
   background: blue;
@@ -116,17 +118,24 @@ a {
   color: white;
 }
 
-.nav-right {
+.nav-links {
   margin-right: 50px;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: Bold;
+}
+.nav-links a.nav-links:hover {
+  color: yellowgreen;
+  text-decoration: underline;
 }
 
+.btn-info {
+  background-color: #e12235;
+}
 /* ==============================================
                   HOME PAGE
    =========================================== */
-.card-image {
+ .card-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,77 +143,80 @@ a {
 }
 
 .homepage .news-headings {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding: 5px;
-}
-.headline-text {
-  margin-top: 210px;
-  color: white;
 }
 
 .news-headings a {
   color: white;
-  /* font-weight: 500; */
   font-size: 1.7rem;
+  text-decoration: none;
 }
 
-.news-right .news-headings a {
+/* .news-right .news-headings a {
   color: white;
   font-weight: 500;
   font-size: 1rem;
-}
+} */
 
-.news-right .card-image {
+/* .news-right .card-image {
   height: 195px;
-}
+} */
 
-.news-right .news-headings a {
+/* .news-right .news-headings a {
   font-weight: 900;
   color: #fff;
-}
+} */
 
 /* ==============================================
                   SOURCES
    =========================================== */
-.card {
+ .card {
   background: #fff none repeat scroll 0 0;
   border: 2px solid #fff;
   border-radius: 5px;
-  box-shadow: 0 0 11px 5px rgb(103 58 183 / 10%);
   margin-bottom: 1px;
   padding: 1px 1px;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
 }
+.sources .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .card:hover {
-  box-shadow: 0 0 11px 5px grey;
-  /* background: linear-gradient(-19deg, rgba(235, 174, 8, 0.95) 0px); */
+  box-shadow: 0 0 11px 5px red;
 }
 
 .card-img-top {
   height: 250px;
 }
-.top-news .card {
+.height .card {
   height: 460px;
 }
 
 /* ==============================================
                   FOOTER
-   =========================================== */
-
+   =========================================== */ 
 footer {
   background: blue;
   padding: 15px;
 }
 
-footer .justify-content-center h5 a {
-  margin-right: 14px;
+footer div p {
+  /* margin-right: 14px; */
   font-size: 15px;
   color: white;
 }
-
+footer div p span {
+  font-weight: bolder;
+}
+/* ==============================================
+                  MEDIA QUERIES
+   =========================================== */
 @media (min-width: 768px) and (max-width: 991px) {
   footer h5 {
     display: none;
@@ -213,7 +225,7 @@ footer .justify-content-center h5 a {
     display: block;
   }
 }
-
+ 
 @media (max-width: 767px) {
   footer h5 {
     display: none;

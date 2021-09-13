@@ -1,43 +1,29 @@
 {% macro displayNewsSources(sources) %}
-
-{% for source in sources %}
-
-<a href="/source/articles/{{ source.id }}" class="btn btn-primary mb-2">{{ source.name }}</a>
-
-{% endfor %}
-
+    {% for source in sources %}
+        <a href="/source/articles/{{ source.id }}" class="btn btn-primary mb-2">{{ source.name }}</a>
+    {% endfor %}
 {% endmacro %}
 
-
-<!-- display article lists from thw source -->
 {% macro displayNewsSourceArticles(articles_list) %}
-
-{% for article in articles_list %}
-
-<div class="col-md-3">
-    <div class="card mb-4">
-        {% if article.urlToImage %}
-        <img src="{{ article.urlToImage }}" class="card-img-top" alt="{{ article.title }}">
-        {% endif %}
-
-        <div class="card-body">
-            <h6 class="">{{ article.title }}</h6>
-            <p class="card-text"><small>{{ article.description[:110] }}...</small></p>
-            <div class="d-flex justify-content-around">
-                <div>
-                    <p><strong><span class="badge rounded-pill bg-warning text-dark"><small>{{ article.publishedAt
-                                    }}</small></span></strong>
-                    </p>
-                </div>
-                <div class="text-center">
-                    <a href="{{ article.url }}" target="_blank" class="color-main"><small>Read More <i
-                                class="fa fa-arrow-right"></i></small> </a>
+    {% for article in articles_list %}
+        <div class="col-md-3">
+            <div class="card mb-4">
+                {% if article.urlToImage %}
+                <img src="{{ article.urlToImage }}" class="card-img-top" alt="{{ article.title }}">
+                {% endif %}
+                <div class="card-body">
+                    <h6>{{ article.title }}</h6>
+                    <p class="card-text">{{ article.description[:110] }}...</p>
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <h4 class="bg-info">{{ article.publishedAt}}</h4>
+                        </div>
+                        <div class="text-center">
+                            <a href="{{ article.url }}" target="_blank">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-{% endfor %}
-
+    {% endfor %}
 {% endmacro %}
