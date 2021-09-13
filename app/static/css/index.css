@@ -185,6 +185,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
+  width: 700px;
+  height: 400px;
 }
 
 .card:hover {
@@ -196,6 +199,14 @@ body {
 }
 .height .card {
   height: 460px;
+}
+/* ==============================================
+            ADDITION ON THE ARTICLE
+   =========================================== */ 
+.justify-content-around h4 {
+  border-radius: 30px;
+  padding: 2px;
+  font-size: 10px;
 }
 
 /* ==============================================
