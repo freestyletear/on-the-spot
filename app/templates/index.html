@@ -7,9 +7,9 @@
                 HOME PAGE
 ================================================= -->
 <div class="homepage mt-2">
-    <div class="m-2 text-center">
+    <div class="m-2 text-center row">
         {% for bbc in bbc_home_picture %}
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card-image p-4 mb-3" style="background-image: url({{bbc.urlToImage}});">
                     <div class="headline-">
                         <button class="btn btn-secondary mt-5">BBC News</button>
@@ -19,7 +19,7 @@
             </div>
         {% endfor %}
         {% for cnn_news in cnn %}
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card-image p-4 mb-3" style="background-image: url({{cnn_news.urlToImage}});">
                     <div class="headline-">
                         <button class="btn btn-secondary mt-1">CNN News</button>
@@ -29,7 +29,7 @@
             </div>
         {% endfor %}
         {% for google in google %}
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card-image p-4 mb-3" style="background-image: url({{google.urlToImage}});">
                     <div class="headline-">
                         <button class="btn btn-secondary mt-1">Google News</button>
@@ -48,8 +48,8 @@
 <div class="sources m-2">
     <div class="card p-2">
         <h3 class="text-center mb-4">Sources</h3>
-        <div>
-                {{ macro.displayNewsSources(sources) }}
+        <div class="row">
+            {{ macro.displayNewsSources(sources) }}
         </div>
     </div>
 </div>
