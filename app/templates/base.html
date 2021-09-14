@@ -36,16 +36,7 @@
     {% block navbar %}
     {% include "navbar.html" %}
     {% endblock %}
-    <div class="illustration">
-        <div class="i-large"></div>
-        <div class="i-medium"></div>
-        <div class="i-small"></div>
-    </div>
-    <header>
-        <div class="audioembed">
-            <audio controls="true" autoplay="true" src="{{url_for('static',filename='MP3/audio.mp3')}}"  onloadeddata="setLowVolume()" id="audio1">
-        </div>
-    </header>
+    
 
     <!--==============================================
                 MAIN CONTENT BLOCK
