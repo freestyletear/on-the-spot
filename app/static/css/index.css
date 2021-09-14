@@ -2,6 +2,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 *,
 *
@@ -140,10 +141,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
+  height: 400px;
 }
 
 .homepage .news-headings {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 5px;
 }
@@ -153,21 +155,9 @@ body {
   font-size: 1.7rem;
   text-decoration: none;
 }
-
-/* .news-right .news-headings a {
-  color: white;
-  font-weight: 500;
-  font-size: 1rem;
-} */
-
-/* .news-right .card-image {
-  height: 195px;
-} */
-
-/* .news-right .news-headings a {
-  font-weight: 900;
-  color: #fff;
-} */
+.headline {
+  padding-top: 150px;
+}
 
 /* ==============================================
                   SOURCES
@@ -182,12 +172,10 @@ body {
   -webkit-transition: all 300ms ease-in-out;
 }
 .sources .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: scroll;
   width: 700px;
   height: 400px;
+  margin: 0 auto;
 }
 
 .card:hover {
@@ -205,8 +193,16 @@ body {
    =========================================== */ 
 .justify-content-around h4 {
   border-radius: 30px;
-  padding: 2px;
-  font-size: 10px;
+  padding: 5px;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.justify-content-around div a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.justify-content-around div a:hover {
+  color: yellowgreen;
 }
 
 /* ==============================================
@@ -218,7 +214,6 @@ footer {
 }
 
 footer div p {
-  /* margin-right: 14px; */
   font-size: 15px;
   color: white;
 }
