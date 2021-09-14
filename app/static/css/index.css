@@ -87,6 +87,45 @@ body {
     background: #dc3545;
   }
 }
+/* ===================================================
+            AUDIO
+   =================================================== */
+.audioembade {
+    position: fixed;
+    z-index: 6;
+}
+/* ===================================================
+            PARTICLES
+   =================================================== */
+.i-large,
+.i-medium,
+.i-small {
+	position : fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 9;
+}
+
+.i-medium {
+	background: url('../IMG/particules_medium.png') repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 12s linear infinite;
+	     -o-animation: dropFlowParticles 12s linear infinite;
+	        animation: dropFlowParticles 12s linear infinite;
+}
+.i-small {
+	background: url('../IMG/particules_small.png') repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 27s linear infinite;
+	     -o-animation: dropFlowParticles 27s linear infinite;
+	        animation: dropFlowParticles 27s linear infinite;
+}
+
+@-webkit-keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 413px; }
+}
+@keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 413px; }
+}
 
 /* ===================================================
             404 CAROUSEL
@@ -136,6 +175,13 @@ body {
 /* ==============================================
                   HOME PAGE
    =========================================== */
+.party {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  color: orange;
+  background: linear-gradient(to right, red, #fff, green);
+}
  .card-image {
   background-position: center;
   background-repeat: no-repeat;
